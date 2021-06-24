@@ -11,6 +11,6 @@ export class AppComponent {
   todos: Todo[] = [{ title: 'Todo1' }, { title: 'Todo2' }];
 
   addTodo() {
-    this.todos.push({title: `New Todo ${Math.random()*1000}`})
+    this.todos.push({title: `New Todo ${Math.floor(Math.random()*1000)}`})
   }
 }
